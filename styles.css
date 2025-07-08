@@ -1,5 +1,6 @@
 
-/* Custom CSS for animations and styles */
+/* Custom CSS for animations and styles with updated Flint colors */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -42,6 +43,72 @@
     }
 }
 
+@keyframes float-slow {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px); 
+    }
+    33% { 
+        transform: translateY(-15px) translateX(5px); 
+    }
+    66% { 
+        transform: translateY(-5px) translateX(-5px); 
+    }
+}
+
+@keyframes float-medium {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px); 
+    }
+    50% { 
+        transform: translateY(-12px) translateX(8px); 
+    }
+}
+
+@keyframes float-fast {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px); 
+    }
+    25% { 
+        transform: translateY(-8px) translateX(4px); 
+    }
+    75% { 
+        transform: translateY(-4px) translateX(-4px); 
+    }
+}
+
+@keyframes pulse-gentle {
+    0%, 100% { 
+        opacity: 0.6; 
+        transform: scale(1); 
+    }
+    50% { 
+        opacity: 0.9; 
+        transform: scale(1.05); 
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
@@ -54,7 +121,7 @@ html {
 
 .btn-hover-scale:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(74, 0, 51, 0.15);
 }
 
 /* Navigation underline animation */
@@ -69,7 +136,7 @@ html {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #FF6B6B;
+    background-color: #FF674D;
     transition: width 0.3s ease;
 }
 
@@ -79,7 +146,7 @@ html {
 
 /* Progress bar styling */
 .progress-bar {
-    background: linear-gradient(to right, #FF6B6B, #8B0000);
+    background: linear-gradient(to right, #FF674D, #4A0033);
     height: 4px;
     border-radius: 2px;
     transition: width 0.3s ease;
@@ -102,12 +169,49 @@ html {
 
 .card-hover:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(74, 0, 51, 0.15);
 }
 
 /* Form input focus styles */
 .form-input:focus {
     outline: none;
-    border-color: #FF6B6B;
-    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+    border-color: #FF674D;
+    box-shadow: 0 0 0 3px rgba(255, 103, 77, 0.1);
+}
+
+/* Gradient text animation */
+.gradient-text {
+    background: linear-gradient(45deg, #FF674D, #4A0033);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-text 3s ease-in-out infinite;
+}
+
+@keyframes gradient-text {
+    0%, 100% { 
+        background-position: 0% 50%; 
+    }
+    50% { 
+        background-position: 100% 50%; 
+    }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FAEDE6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #84345B;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4A0033;
 }
