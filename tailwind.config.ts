@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,15 +66,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Flint Group Brand Colors
+				// Updated Flint Group Brand Colors
 				'flint-maroon': '#4A0033',
 				'flint-coral': '#FF674D',
 				'flint-cream': '#FAEDE6',
-				'flint-cream-alt': '#F8F7F5',
-				'flint-orange': '#FFB366',
+				'flint-cream-alt': '#FDF6F2',
+				'flint-orange': '#F5C39F',
 				'flint-sage': '#A8D5BA',
 				'flint-sky': '#87CEEB',
 				'flint-lavender': '#D8BFD8',
+				'flint-secondary': '#84345B',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

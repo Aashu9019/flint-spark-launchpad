@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-flint-cream via-flint-cream-alt to-white overflow-hidden">
-      {/* Enhanced Background Shapes with smoother animations */}
+    <section className="relative min-h-screen bg-gradient-to-br from-flint-cream via-flint-cream-alt to-flint-cream overflow-hidden">
+      {/* Enhanced Background Shapes with updated colors */}
       <div className="absolute inset-0">
         {/* Large floating shapes */}
         <div className="absolute top-16 md:top-20 left-5 md:left-10 w-32 md:w-40 h-32 md:h-40 rounded-full bg-gradient-to-br from-flint-sage/30 to-flint-sage/10 animate-float-slow blur-sm"></div>
@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="absolute top-1/4 left-1/2 w-4 md:w-6 h-4 md:h-6 bg-flint-maroon/15 transform rotate-12 animate-pulse-gentle" style={{ animationDelay: '2s' }}></div>
         
         {/* Subtle gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-flint-cream/20"></div>
       </div>
       
       <div className="relative container mx-auto px-4 pt-20 md:pt-24 pb-16 md:pb-20 flex items-center min-h-screen">
@@ -36,7 +36,7 @@ const Hero = () => {
             <span className="text-flint-coral animate-gradient-text block md:inline"> Every Life Stage</span>
           </h1>
           
-          <p className="font-montserrat text-lg md:text-xl lg:text-2xl text-gray-700 mb-6 md:mb-8 leading-relaxed animate-slide-in-left px-2 md:px-0" style={{ animationDelay: '0.3s' }}>
+          <p className="font-montserrat text-lg md:text-xl lg:text-2xl text-flint-secondary mb-6 md:mb-8 leading-relaxed animate-slide-in-left px-2 md:px-0" style={{ animationDelay: '0.3s' }}>
             Smart, award-winning mortgage advice delivered with heart.
           </p>
           
