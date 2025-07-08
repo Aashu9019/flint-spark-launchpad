@@ -1,74 +1,82 @@
 
-import { Flame, Twitter, Linkedin, Github, Mail } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
-  const footerSections = [
-    {
-      title: "Product",
-      links: ["Features", "Pricing", "Security", "Enterprise", "API"]
-    },
-    {
-      title: "Company",
-      links: ["About", "Blog", "Careers", "Press", "Partners"]
-    },
-    {
-      title: "Resources",
-      links: ["Documentation", "Help Center", "Community", "Webinars", "Status"]
-    },
-    {
-      title: "Legal",
-      links: ["Privacy", "Terms", "Cookie Policy", "Licenses", "Compliance"]
-    }
-  ];
-
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
-          {/* Brand Section */}
-          <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
-                <Flame className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-2xl font-bold">Flint</span>
-            </div>
-            <p className="text-gray-400 max-w-md">
-              Igniting innovation and accelerating growth for businesses worldwide. 
-              The all-in-one platform that transforms ideas into reality.
+    <footer className="bg-gray-900 text-white py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          {/* Company Info */}
+          <div>
+            <h3 className="font-montserrat text-2xl font-bold text-flint-coral mb-4">
+              Flint Group
+            </h3>
+            <p className="font-montserrat text-gray-300 mb-4">
+              Australia's trusted mortgage brokers, delivering tailored finance solutions with heart.
             </p>
-            <div className="flex space-x-4">
-              <Twitter className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Github className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Mail className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
+            <div className="space-y-2 text-sm text-gray-400">
+              <p>📍 123 Finance Street, Sydney NSW 2000</p>
+              <p>📞 (02) 1234 5678</p>
+              <p>✉️ hello@flintgroup.au</p>
             </div>
           </div>
-
-          {/* Footer Links */}
-          {footerSections.map((section, index) => (
-            <div key={index} className="space-y-4">
-              <h3 className="font-semibold text-white">{section.title}</h3>
-              <ul className="space-y-2">
-                {section.links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+          
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-montserrat font-semibold mb-4">Services</h4>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li><a href="#" className="hover:text-flint-coral transition-colors">First Home Loans</a></li>
+              <li><a href="#" className="hover:text-flint-coral transition-colors">Investment Loans</a></li>
+              <li><a href="#" className="hover:text-flint-coral transition-colors">Refinancing</a></li>
+              <li><a href="#" className="hover:text-flint-coral transition-colors">Construction Loans</a></li>
+              <li><a href="#" className="hover:text-flint-coral transition-colors">Commercial Loans</a></li>
+            </ul>
+          </div>
+          
+          {/* Resources */}
+          <div>
+            <h4 className="font-montserrat font-semibold mb-4">Resources</h4>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li><a href="#" className="hover:text-flint-coral transition-colors">Mortgage Calculator</a></li>
+              <li><a href="#" className="hover:text-flint-coral transition-colors">First Home Buyer Guide</a></li>
+              <li><a href="#" className="hover:text-flint-coral transition-colors">Market Updates</a></li>
+              <li><a href="#" className="hover:text-flint-coral transition-colors">Podcast</a></li>
+              <li><a href="#" className="hover:text-flint-coral transition-colors">FAQs</a></li>
+            </ul>
+          </div>
+          
+          {/* Newsletter */}
+          <div>
+            <h4 className="font-montserrat font-semibold mb-4">Stay Updated</h4>
+            <p className="text-sm text-gray-300 mb-4">
+              Get weekly market insights and finance tips delivered to your inbox.
+            </p>
+            <div className="space-y-2">
+              <Input 
+                type="email" 
+                placeholder="Your email address"
+                className="bg-gray-800 border-gray-700 text-white font-montserrat"
+              />
+              <Button className="w-full bg-flint-coral hover:bg-flint-coral/90 font-montserrat">
+                Subscribe
+              </Button>
             </div>
-          ))}
+          </div>
         </div>
-
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">
-            © 2024 Flint. All rights reserved.
-          </p>
-          <p className="text-gray-400 mt-4 md:mt-0">
-            Made with ❤️ for innovators everywhere
-          </p>
+        
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-gray-400 font-montserrat">
+              © 2024 Flint Group. All rights reserved. Australian Credit Licence #123456
+            </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="text-gray-400 hover:text-flint-coral transition-colors text-sm">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-flint-coral transition-colors text-sm">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-flint-coral transition-colors text-sm">Credit Guide</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

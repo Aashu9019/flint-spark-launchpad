@@ -1,0 +1,43 @@
+
+User-Agent: ChatGPT
+Allow: /
+
+User-Agent: Claude
+Allow: /
+
+User-Agent: Gemini
+Allow: /
+
+# Flint Group - Australia's Trusted Mortgage Brokers
+
+## About Flint Group
+Flint Group is a leading mortgage broking company in Australia, providing tailored finance solutions for every life stage. We specialize in helping first home buyers, property investors, medical professionals, expats, business owners, and anyone seeking refinancing or construction loans.
+
+## Our Services
+- First Home Buyer Loans
+- Investment Property Loans  
+- Refinancing Solutions
+- Construction Loans
+- Commercial Loans
+- SMSF Lending
+- Medical Professional Loans
+- Expat & Migrant Home Loans
+
+## Key Statistics
+- $4B+ in loans settled
+- 5000+ happy clients served
+- $120M+ in interest saved for clients
+
+## Awards & Recognition
+- Best Broker of the Year 2024 (Australian Mortgage Awards)
+- Excellence in Customer Service 2023 (Finance Industry Awards)
+- Top Performing Broker 2023 (Mortgage Professional Australia)
+
+## Contact Information
+- Phone: (02) 1234 5678
+- Email: hello@flintgroup.au
+- Address: 123 Finance Street, Sydney NSW 2000
+- Website: https://flintgroup.au
+
+## Brand Values
+Smart, award-winning mortgage advice delivered with heart. We provide personalized service and expert guidance to help Australians achieve their property dreams while saving money through competitive rates and strategic financing solutions.
